@@ -7,7 +7,23 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        gold: {
+          light: '#FFD700',
+          DEFAULT: '#C9A14A',
+          dark: '#B8860B',
+        },
+        black: {
+          DEFAULT: '#000',
+          rich: '#181818',
+        },
+      },
+      fontFamily: {
+        serif: ['Merriweather', 'serif'],
+        heading: ['Playfair Display', 'serif'],
+      },
       backgroundImage: {
+        'gold-pattern': "url('/images/gold-pattern.png')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
