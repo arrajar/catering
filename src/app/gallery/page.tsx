@@ -1,4 +1,5 @@
-import React from 'react';
+
+import Image from 'next/image';
 
 export default function Gallery() {
   return (
@@ -10,10 +11,10 @@ export default function Gallery() {
           Discover moments from our grand events, exquisite setups, and culinary masterpieces. Each picture tells a story of celebration and excellence.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
-          <img src="/images/food1.jpg" alt="Food 1" className="rounded-lg h-48 w-full object-cover gold-border border" />
-          <img src="/images/food2.jpg" alt="Food 2" className="rounded-lg h-48 w-full object-cover gold-border border" />
-          <img src="/images/catering1.jpg" alt="Catering 1" className="rounded-lg h-48 w-full object-cover gold-border border" />
-          <img src="/images/event1.jpg" alt="Event 1" className="rounded-lg h-48 w-full object-cover gold-border border" />
+          <Image src="/images/food1.jpg" alt="Food 1" width={400} height={192} className="rounded-lg h-48 w-full object-cover gold-border border" />
+          <Image src="/images/food2.jpg" alt="Food 2" width={400} height={192} className="rounded-lg h-48 w-full object-cover gold-border border" />
+          <Image src="/images/catering1.jpg" alt="Catering 1" width={400} height={192} className="rounded-lg h-48 w-full object-cover gold-border border" />
+          <Image src="/images/event1.jpg" alt="Event 1" width={400} height={192} className="rounded-lg h-48 w-full object-cover gold-border border" />
           <div className="bg-rich-black rounded-lg h-48 flex items-center justify-center gold-border border">More coming soon...</div>
           <div className="bg-rich-black rounded-lg h-48 flex items-center justify-center gold-border border">More coming soon...</div>
         </div>

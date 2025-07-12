@@ -1,4 +1,5 @@
-import React from 'react';
+
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -6,7 +7,7 @@ export default function About() {
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl md:text-5xl font-heading mb-6 gold-text">About Us</h1>
         <div className="h-1 w-24 mx-auto gold-bg mb-8 rounded"></div>
-        <img src="/images/event1.jpg" alt="Catering Event" className="mx-auto rounded-lg mb-8 border-4 gold-border shadow-lg max-h-64 object-cover" />
+        <Image src="/images/event1.jpg" alt="Catering Event" width={600} height={256} className="mx-auto rounded-lg mb-8 border-4 gold-border shadow-lg max-h-64 object-cover" />
         <p className="text-lg md:text-xl mb-8">
           With 29 years of expertise, UBAHAR Wedding Events brings a royal touch to every celebration. Our legacy is built on trust, taste, and timeless elegance, making us a preferred choice for weddings, corporate events, and special occasions.
         </p>

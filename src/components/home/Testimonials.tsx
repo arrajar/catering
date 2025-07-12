@@ -1,5 +1,6 @@
-'use client';
 
+'use client';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -82,9 +83,11 @@ const Testimonials = () => {
                 className="bg-gray-50 rounded-lg p-8 h-full"
               >
                 <div className="flex items-center mb-6">
-                  <img
+                  <Image
                     src={testimonial.image}
                     alt={testimonial.name}
+                    width={64}
+                    height={64}
                     className="w-16 h-16 rounded-full object-cover mr-4"
                   />
                   <div>
